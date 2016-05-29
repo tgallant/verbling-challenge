@@ -5,9 +5,9 @@ import classnames from 'classnames';
 
 export default class Item extends React.Component {
 
-	toggleItem = () => {
-		this.props.toggleItem(this.props.index, this.props.item);
-	};
+  toggleItem = () => {
+    this.props.toggleItem(this.props.index, this.props.item);
+  };
 
   render() {
     let classes = classnames('item', { open : this.props.item.open });
