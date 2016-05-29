@@ -1,6 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
 
+// classnames https://github.com/JedWatson/classnames
+
 export default class Item extends React.Component {
 
 	toggleItem = () => {
