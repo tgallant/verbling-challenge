@@ -1,0 +1,111 @@
+body {
+	padding: 1rem 0;
+	height: 100vh;
+}
+body * {
+	font-family: Lucida Console, Monaco5, monospace;
+}
+#app .row {
+	width: 100%;
+	max-width: 400px;
+}
+#app h1 {
+	font-size: 2rem;
+}
+body .form-control,
+body .form-control:focus {
+	border: 2px solid #0a0a0a;
+}
+body .button {
+	color: #0a0a0a;
+	background: #fff;
+	font-size: 0.7rem;
+	margin-right: 15px;
+	border: 2px solid #0a0a0a;
+	box-shadow: 3px 3px 3px #0a0a0a;
+	-moz-box-shadow: 3px 3px 3px #0a0a0a;
+	-webkit-box-shadow: 3px 3px 3px #0a0a0a;
+}
+body .button:hover,
+body .button:focus {
+	outline: none;
+	color: #0a0a0a;
+	background: #fff;
+}
+.search-container .form-control::-webkit-input-placeholder {
+	color: red;
+}
+
+.search-container .form-control:-moz-placeholder {
+	color: red;
+}
+
+.search-container .form-control::-moz-placeholder {
+	color: red;
+}
+.search-container .form-control:-ms-input-placeholder {  
+	color: red;  
+}
+.items-container {
+	height: 400px;
+	overflow: auto;
+	margin: 0 0 1rem;
+	border: 2px solid #0a0a0a;
+}
+.items-container .item {
+	border: 2px solid #0a0a0a;
+	position: relative;
+	padding: 12px 5px;
+	cursor: pointer;
+	height: 50px;
+	margin: 5px;
+}
+.items-container .item.open {
+	height: auto;
+}
+.items-container .item .title {
+	margin-bottom: 0;
+	max-width: 300px;
+	line-height: 1.5;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.items-container .item.open .title {
+	text-overflow: initial;
+	overflow: visible;
+	white-space: initial;
+	max-width: none;
+}
+.items-container .item .description {
+	display: none;
+}
+.items-container .item.open .description {
+	display: block;
+	margin-top: 10px;
+}
+.items-container .item .arrow {
+	position: absolute;
+	font-size: 1.5rem;
+	right: 20px;
+	top: 5px;
+}
+.items-container .item .arrow:after {
+	content: '\25BE';
+}
+.items-container .item.open .arrow:after {
+	content: '\25B4';
+}
+.controls-container button:last-of-type {
+	margin-right: 0;
+}
+
+@media screen and (max-width: 450px) {
+	#app .row {
+		padding: 0 1rem;
+	}
+	#app .button {
+		width: 100%;
+		display: block;
+	}
+}
