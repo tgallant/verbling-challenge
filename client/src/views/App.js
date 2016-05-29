@@ -69,16 +69,16 @@ export default class App extends React.Component {
 		this.setState({ items : newItems });
 	};
 
-  render() {
-    return(
-    	<main className="row">
-  			<h1 className="text-center">Verbling Challenge</h1>
-    		<Search handleSearchChange={this.handleSearchChange} />
-    		<Items items={this.state.items} keywords={this.state.keywords} toggleItem={this.toggleItem} />
-    		<Controls openModal={this.openModal} openAll={this.openAll} closeAll={this.closeAll} toggleAll={this.toggleAll} />
-    		<Form modalOpen={this.state.modalOpen} closeModal={this.closeModal} addItem={this.addItem} />
-    	</main>
-    );
-  }
+	render() {
+		return(
+			<main className="row">
+				<h1 className="text-center">Verbling Challenge</h1>
+				<Search handleSearchChange={this.handleSearchChange} />
+				<Items items={this.state.items} keywords={this.state.keywords} toggleItem={this.toggleItem} />
+				<Controls openModal={this.openModal} openAll={this.openAll} closeAll={this.closeAll} toggleAll={this.toggleAll} />
+				<Form modalOpen={this.state.modalOpen} closeModal={this.closeModal} addItem={this.addItem} />
+			</main>
+		);
+	}
 
 }

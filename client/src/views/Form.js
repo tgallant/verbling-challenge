@@ -60,8 +60,7 @@ export default class Form extends React.Component {
     		<form onSubmit={this.submitForm}>
     			<fieldset>
     				<legend>Title</legend>
-    				<input type="text" className="form-control" onChange={this.handleTitleChange} 
-                           ref={(ref) => this.titleInput = ref} required />
+    				<input type="text" className="form-control" onChange={this.handleTitleChange} ref={(ref) => this.titleInput = ref} required />
     			</fieldset>
     			<fieldset>
     				<legend>Description</legend>
